@@ -13,6 +13,9 @@
 		841F57B81ED99C1600E16B10 /* ZeroKata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841F57B61ED99C1600E16B10 /* ZeroKata.xcdatamodeld */; };
 		841F57BA1ED99C1600E16B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F57B91ED99C1600E16B10 /* Assets.xcassets */; };
 		841F57BD1ED99C1600E16B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F57BB1ED99C1600E16B10 /* LaunchScreen.storyboard */; };
+		841F57C71ED99EA700E16B10 /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 841F57C41ED99EA700E16B10 /* Board.png */; };
+		841F57C81ED99EA700E16B10 /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 841F57C51ED99EA700E16B10 /* Cross.png */; };
+		841F57C91ED99EA700E16B10 /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 841F57C61ED99EA700E16B10 /* Nought.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		841F57B91ED99C1600E16B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841F57BC1ED99C1600E16B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841F57BE1ED99C1600E16B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841F57C41ED99EA700E16B10 /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Board.png; sourceTree = "<group>"; };
+		841F57C51ED99EA700E16B10 /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
+		841F57C61ED99EA700E16B10 /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nought.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				841F57BB1ED99C1600E16B10 /* LaunchScreen.storyboard */,
 				841F57BE1ED99C1600E16B10 /* Info.plist */,
 				841F57B61ED99C1600E16B10 /* ZeroKata.xcdatamodeld */,
+				841F57C41ED99EA700E16B10 /* Board.png */,
+				841F57C51ED99EA700E16B10 /* Cross.png */,
+				841F57C61ED99EA700E16B10 /* Nought.png */,
 			);
 			path = ZeroKata;
 			sourceTree = "<group>";
@@ -126,7 +135,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841F57C91ED99EA700E16B10 /* Nought.png in Resources */,
+				841F57C71ED99EA700E16B10 /* Board.png in Resources */,
 				841F57BD1ED99C1600E16B10 /* LaunchScreen.storyboard in Resources */,
+				841F57C81ED99EA700E16B10 /* Cross.png in Resources */,
 				841F57BA1ED99C1600E16B10 /* Assets.xcassets in Resources */,
 				841F57B51ED99C1600E16B10 /* Main.storyboard in Resources */,
 			);
