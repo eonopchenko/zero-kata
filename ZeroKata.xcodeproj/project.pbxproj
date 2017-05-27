@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841F57B01ED99C1600E16B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F57AF1ED99C1600E16B10 /* AppDelegate.swift */; };
+		841F57B21ED99C1600E16B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F57B11ED99C1600E16B10 /* ViewController.swift */; };
+		841F57B51ED99C1600E16B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F57B31ED99C1600E16B10 /* Main.storyboard */; };
+		841F57B81ED99C1600E16B10 /* ZeroKata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841F57B61ED99C1600E16B10 /* ZeroKata.xcdatamodeld */; };
+		841F57BA1ED99C1600E16B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F57B91ED99C1600E16B10 /* Assets.xcassets */; };
+		841F57BD1ED99C1600E16B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F57BB1ED99C1600E16B10 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		841F57AC1ED99C1600E16B10 /* ZeroKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841F57AF1ED99C1600E16B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		841F57B11ED99C1600E16B10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		841F57B41ED99C1600E16B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		841F57B71ED99C1600E16B10 /* ZeroKata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZeroKata.xcdatamodel; sourceTree = "<group>"; };
+		841F57B91ED99C1600E16B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		841F57BC1ED99C1600E16B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		841F57BE1ED99C1600E16B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841F57A91ED99C1600E16B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841F57A31ED99C1600E16B10 = {
+			isa = PBXGroup;
+			children = (
+				841F57AE1ED99C1600E16B10 /* ZeroKata */,
+				841F57AD1ED99C1600E16B10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		841F57AD1ED99C1600E16B10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841F57AC1ED99C1600E16B10 /* ZeroKata.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841F57AE1ED99C1600E16B10 /* ZeroKata */ = {
+			isa = PBXGroup;
+			children = (
+				841F57AF1ED99C1600E16B10 /* AppDelegate.swift */,
+				841F57B11ED99C1600E16B10 /* ViewController.swift */,
+				841F57B31ED99C1600E16B10 /* Main.storyboard */,
+				841F57B91ED99C1600E16B10 /* Assets.xcassets */,
+				841F57BB1ED99C1600E16B10 /* LaunchScreen.storyboard */,
+				841F57BE1ED99C1600E16B10 /* Info.plist */,
+				841F57B61ED99C1600E16B10 /* ZeroKata.xcdatamodeld */,
+			);
+			path = ZeroKata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		841F57AB1ED99C1600E16B10 /* ZeroKata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841F57C11ED99C1600E16B10 /* Build configuration list for PBXNativeTarget "ZeroKata" */;
+			buildPhases = (
+				841F57A81ED99C1600E16B10 /* Sources */,
+				841F57A91ED99C1600E16B10 /* Frameworks */,
+				841F57AA1ED99C1600E16B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroKata;
+			productName = ZeroKata;
+			productReference = 841F57AC1ED99C1600E16B10 /* ZeroKata.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841F57A41ED99C1600E16B10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Evgenii Onopchenko";
+				TargetAttributes = {
+					841F57AB1ED99C1600E16B10 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 841F57A71ED99C1600E16B10 /* Build configuration list for PBXProject "ZeroKata" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841F57A31ED99C1600E16B10;
+			productRefGroup = 841F57AD1ED99C1600E16B10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841F57AB1ED99C1600E16B10 /* ZeroKata */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841F57AA1ED99C1600E16B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841F57BD1ED99C1600E16B10 /* LaunchScreen.storyboard in Resources */,
+				841F57BA1ED99C1600E16B10 /* Assets.xcassets in Resources */,
+				841F57B51ED99C1600E16B10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841F57A81ED99C1600E16B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841F57B81ED99C1600E16B10 /* ZeroKata.xcdatamodeld in Sources */,
+				841F57B21ED99C1600E16B10 /* ViewController.swift in Sources */,
+				841F57B01ED99C1600E16B10 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		841F57B31ED99C1600E16B10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841F57B41ED99C1600E16B10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		841F57BB1ED99C1600E16B10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841F57BC1ED99C1600E16B10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		841F57BF1ED99C1600E16B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		841F57C01ED99C1600E16B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		841F57C21ED99C1600E16B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZeroKata/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unitec.ZeroKata.ZeroKata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		841F57C31ED99C1600E16B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZeroKata/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unitec.ZeroKata.ZeroKata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841F57A71ED99C1600E16B10 /* Build configuration list for PBXProject "ZeroKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841F57BF1ED99C1600E16B10 /* Debug */,
+				841F57C01ED99C1600E16B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841F57C11ED99C1600E16B10 /* Build configuration list for PBXNativeTarget "ZeroKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841F57C21ED99C1600E16B10 /* Debug */,
+				841F57C31ED99C1600E16B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		841F57B61ED99C1600E16B10 /* ZeroKata.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				841F57B71ED99C1600E16B10 /* ZeroKata.xcdatamodel */,
+			);
+			currentVersion = 841F57B71ED99C1600E16B10 /* ZeroKata.xcdatamodel */;
+			path = ZeroKata.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 841F57A41ED99C1600E16B10 /* Project object */;
+}
