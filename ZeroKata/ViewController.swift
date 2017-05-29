@@ -1,20 +1,19 @@
 //
 //  ViewController.swift
-//  ZeroKata
+//  Zero Kata
 //
-//  Created by Admin on 27.05.17.
-//  Copyright © 2017 Evgenii Onopchenko. All rights reserved.
+//  Created by Nishant, Alex, E on 18/05/2017.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,10 +32,10 @@ class ViewController: UIViewController {
         [0, 4, 8], [2, 4, 6]];
     var gameOver = false;
     
-    @IBOutlet weak var labelWinner: UILabel!
-
-    @IBAction func tap(_ sender: Any) {
-        
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func action(_ sender: AnyObject)
+    {
         if((cellState[(sender as! UIButton).tag] == 0) && (gameOver == false)) {
             
             cellState[(sender as! UIButton).tag] = player.rawValue
@@ -56,12 +55,12 @@ class ViewController: UIViewController {
             UIView.animate(
                 withDuration: 0.5, animations: {
                     (sender as! UIButton).transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-                },
+            },
                 completion: {
                     _ in UIView.animate(withDuration: 0.5) {
                         (sender as! UIButton).transform = CGAffineTransform.identity
                     }
-                }
+            }
             )
             
             for c in winningCombination {
@@ -70,10 +69,10 @@ class ViewController: UIViewController {
                     (cellState[c[1]] == cellState[c[2]])) {
                     
                     if(cellState[c[0]] == Player.cross.rawValue) {
-                        labelWinner.text = "Cross has won!";
+                        label.text = "Cross has won!";
                     }
                     else if(cellState[c[0]] == Player.nought.rawValue) {
-                        labelWinner.text = "Nought has won!";
+                        label.text = "Nought has won!";
                     }
                     
                     gameOver = true;
@@ -81,5 +80,26 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
+    @IBOutlet weak var playAgainButton: UIButton!
+    @IBAction func playAgain(_ sender: AnyObject)
+    {
+//        stateOfGame = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+//        gameActiveState = true
+//        activePlayer = 1
+//        
+//        playAgainButton.isHidden = true
+//        label.isHidden = true
+//        
+//        for i in 1...9
+//        {
+//            let button = view.viewWithTag(i) as! UIButton
+//            button.setImage(nil, for: UIControlState())
+//        }
+    }
+    
+    
+    
 }
 

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ZeroKata
 //
-//  Created by Admin on 27.05.17.
-//  Copyright © 2017 Evgenii Onopchenko. All rights reserved.
+//  Created by Sebastian Hette on 10.10.2016.
+//  Copyright © 2016 MAGNUMIUM. All rights reserved.
 //
 
 import UIKit

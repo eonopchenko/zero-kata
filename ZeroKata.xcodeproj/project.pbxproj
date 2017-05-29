@@ -7,33 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841F57B01ED99C1600E16B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F57AF1ED99C1600E16B10 /* AppDelegate.swift */; };
-		841F57B21ED99C1600E16B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F57B11ED99C1600E16B10 /* ViewController.swift */; };
-		841F57B51ED99C1600E16B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F57B31ED99C1600E16B10 /* Main.storyboard */; };
-		841F57B81ED99C1600E16B10 /* ZeroKata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841F57B61ED99C1600E16B10 /* ZeroKata.xcdatamodeld */; };
-		841F57BA1ED99C1600E16B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F57B91ED99C1600E16B10 /* Assets.xcassets */; };
-		841F57BD1ED99C1600E16B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F57BB1ED99C1600E16B10 /* LaunchScreen.storyboard */; };
-		841F57C71ED99EA700E16B10 /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 841F57C41ED99EA700E16B10 /* Board.png */; };
-		841F57C81ED99EA700E16B10 /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 841F57C51ED99EA700E16B10 /* Cross.png */; };
-		841F57C91ED99EA700E16B10 /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 841F57C61ED99EA700E16B10 /* Nought.png */; };
+		A28FF7671EC3E0EE0082F4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FF7661EC3E0EE0082F4EF /* AppDelegate.swift */; };
+		A28FF7691EC3E0EE0082F4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FF7681EC3E0EE0082F4EF /* ViewController.swift */; };
+		A28FF76C1EC3E0EE0082F4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28FF76A1EC3E0EE0082F4EF /* Main.storyboard */; };
+		A28FF76E1EC3E0EE0082F4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28FF76D1EC3E0EE0082F4EF /* Assets.xcassets */; };
+		A28FF7711EC3E0EE0082F4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28FF76F1EC3E0EE0082F4EF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		841F57AC1ED99C1600E16B10 /* ZeroKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		841F57AF1ED99C1600E16B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		841F57B11ED99C1600E16B10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		841F57B41ED99C1600E16B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		841F57B71ED99C1600E16B10 /* ZeroKata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZeroKata.xcdatamodel; sourceTree = "<group>"; };
-		841F57B91ED99C1600E16B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		841F57BC1ED99C1600E16B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		841F57BE1ED99C1600E16B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		841F57C41ED99EA700E16B10 /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Board.png; sourceTree = "<group>"; };
-		841F57C51ED99EA700E16B10 /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
-		841F57C61ED99EA700E16B10 /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nought.png; sourceTree = "<group>"; };
+		A28FF7631EC3E0EE0082F4EF /* ZeroKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZeroKata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28FF7661EC3E0EE0082F4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A28FF7681EC3E0EE0082F4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A28FF76B1EC3E0EE0082F4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A28FF76D1EC3E0EE0082F4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A28FF7701EC3E0EE0082F4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A28FF7721EC3E0EE0082F4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		841F57A91ED99C1600E16B10 /* Frameworks */ = {
+		A28FF7601EC3E0EE0082F4EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,76 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		841F57A31ED99C1600E16B10 = {
+		A28FF75A1EC3E0EE0082F4EF = {
 			isa = PBXGroup;
 			children = (
-				841F57AE1ED99C1600E16B10 /* ZeroKata */,
-				841F57AD1ED99C1600E16B10 /* Products */,
+				A28FF7651EC3E0EE0082F4EF /* ZeroKata */,
+				A28FF7641EC3E0EE0082F4EF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		841F57AD1ED99C1600E16B10 /* Products */ = {
+		A28FF7641EC3E0EE0082F4EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				841F57AC1ED99C1600E16B10 /* ZeroKata.app */,
+				A28FF7631EC3E0EE0082F4EF /* ZeroKata.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		841F57AE1ED99C1600E16B10 /* ZeroKata */ = {
+		A28FF7651EC3E0EE0082F4EF /* ZeroKata */ = {
 			isa = PBXGroup;
 			children = (
-				841F57AF1ED99C1600E16B10 /* AppDelegate.swift */,
-				841F57B11ED99C1600E16B10 /* ViewController.swift */,
-				841F57B31ED99C1600E16B10 /* Main.storyboard */,
-				841F57B91ED99C1600E16B10 /* Assets.xcassets */,
-				841F57BB1ED99C1600E16B10 /* LaunchScreen.storyboard */,
-				841F57BE1ED99C1600E16B10 /* Info.plist */,
-				841F57B61ED99C1600E16B10 /* ZeroKata.xcdatamodeld */,
-				841F57C41ED99EA700E16B10 /* Board.png */,
-				841F57C51ED99EA700E16B10 /* Cross.png */,
-				841F57C61ED99EA700E16B10 /* Nought.png */,
+				A28FF7661EC3E0EE0082F4EF /* AppDelegate.swift */,
+				A28FF7681EC3E0EE0082F4EF /* ViewController.swift */,
+				A28FF76A1EC3E0EE0082F4EF /* Main.storyboard */,
+				A28FF76D1EC3E0EE0082F4EF /* Assets.xcassets */,
+				A28FF76F1EC3E0EE0082F4EF /* LaunchScreen.storyboard */,
+				A28FF7721EC3E0EE0082F4EF /* Info.plist */,
 			);
-			path = ZeroKata;
+			path = "ZeroKata";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		841F57AB1ED99C1600E16B10 /* ZeroKata */ = {
+		A28FF7621EC3E0EE0082F4EF /* ZeroKata */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 841F57C11ED99C1600E16B10 /* Build configuration list for PBXNativeTarget "ZeroKata" */;
+			buildConfigurationList = A28FF7751EC3E0EE0082F4EF /* Build configuration list for PBXNativeTarget "ZeroKata" */;
 			buildPhases = (
-				841F57A81ED99C1600E16B10 /* Sources */,
-				841F57A91ED99C1600E16B10 /* Frameworks */,
-				841F57AA1ED99C1600E16B10 /* Resources */,
+				A28FF75F1EC3E0EE0082F4EF /* Sources */,
+				A28FF7601EC3E0EE0082F4EF /* Frameworks */,
+				A28FF7611EC3E0EE0082F4EF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ZeroKata;
-			productName = ZeroKata;
-			productReference = 841F57AC1ED99C1600E16B10 /* ZeroKata.app */;
+			name = "ZeroKata";
+			productName = "ZeroKata";
+			productReference = A28FF7631EC3E0EE0082F4EF /* ZeroKata.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		841F57A41ED99C1600E16B10 /* Project object */ = {
+		A28FF75B1EC3E0EE0082F4EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Evgenii Onopchenko";
+				ORGANIZATIONNAME = "Alexandr Li";
 				TargetAttributes = {
-					841F57AB1ED99C1600E16B10 = {
+					A28FF7621EC3E0EE0082F4EF = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 841F57A71ED99C1600E16B10 /* Build configuration list for PBXProject "ZeroKata" */;
+			buildConfigurationList = A28FF75E1EC3E0EE0082F4EF /* Build configuration list for PBXProject "ZeroKata" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -120,58 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 841F57A31ED99C1600E16B10;
-			productRefGroup = 841F57AD1ED99C1600E16B10 /* Products */;
+			mainGroup = A28FF75A1EC3E0EE0082F4EF;
+			productRefGroup = A28FF7641EC3E0EE0082F4EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				841F57AB1ED99C1600E16B10 /* ZeroKata */,
+				A28FF7621EC3E0EE0082F4EF /* ZeroKata */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		841F57AA1ED99C1600E16B10 /* Resources */ = {
+		A28FF7611EC3E0EE0082F4EF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841F57C91ED99EA700E16B10 /* Nought.png in Resources */,
-				841F57C71ED99EA700E16B10 /* Board.png in Resources */,
-				841F57BD1ED99C1600E16B10 /* LaunchScreen.storyboard in Resources */,
-				841F57C81ED99EA700E16B10 /* Cross.png in Resources */,
-				841F57BA1ED99C1600E16B10 /* Assets.xcassets in Resources */,
-				841F57B51ED99C1600E16B10 /* Main.storyboard in Resources */,
+				A28FF7711EC3E0EE0082F4EF /* LaunchScreen.storyboard in Resources */,
+				A28FF76E1EC3E0EE0082F4EF /* Assets.xcassets in Resources */,
+				A28FF76C1EC3E0EE0082F4EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		841F57A81ED99C1600E16B10 /* Sources */ = {
+		A28FF75F1EC3E0EE0082F4EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841F57B81ED99C1600E16B10 /* ZeroKata.xcdatamodeld in Sources */,
-				841F57B21ED99C1600E16B10 /* ViewController.swift in Sources */,
-				841F57B01ED99C1600E16B10 /* AppDelegate.swift in Sources */,
+				A28FF7691EC3E0EE0082F4EF /* ViewController.swift in Sources */,
+				A28FF7671EC3E0EE0082F4EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		841F57B31ED99C1600E16B10 /* Main.storyboard */ = {
+		A28FF76A1EC3E0EE0082F4EF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				841F57B41ED99C1600E16B10 /* Base */,
+				A28FF76B1EC3E0EE0082F4EF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		841F57BB1ED99C1600E16B10 /* LaunchScreen.storyboard */ = {
+		A28FF76F1EC3E0EE0082F4EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				841F57BC1ED99C1600E16B10 /* Base */,
+				A28FF7701EC3E0EE0082F4EF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -179,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		841F57BF1ED99C1600E16B10 /* Debug */ = {
+		A28FF7731EC3E0EE0082F4EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +214,7 @@
 			};
 			name = Debug;
 		};
-		841F57C01ED99C1600E16B10 /* Release */ = {
+		A28FF7741EC3E0EE0082F4EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,25 +258,25 @@
 			};
 			name = Release;
 		};
-		841F57C21ED99C1600E16B10 /* Debug */ = {
+		A28FF7761EC3E0EE0082F4EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ZeroKata/Info.plist;
+				INFOPLIST_FILE = "ZeroKata/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.unitec.ZeroKata.ZeroKata;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Unitec.Zero-Kata";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		841F57C31ED99C1600E16B10 /* Release */ = {
+		A28FF7771EC3E0EE0082F4EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ZeroKata/Info.plist;
+				INFOPLIST_FILE = "ZeroKata/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.unitec.ZeroKata.ZeroKata;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Unitec.Zero-Kata";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -301,37 +285,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		841F57A71ED99C1600E16B10 /* Build configuration list for PBXProject "ZeroKata" */ = {
+		A28FF75E1EC3E0EE0082F4EF /* Build configuration list for PBXProject "ZeroKata" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				841F57BF1ED99C1600E16B10 /* Debug */,
-				841F57C01ED99C1600E16B10 /* Release */,
+				A28FF7731EC3E0EE0082F4EF /* Debug */,
+				A28FF7741EC3E0EE0082F4EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		841F57C11ED99C1600E16B10 /* Build configuration list for PBXNativeTarget "ZeroKata" */ = {
+		A28FF7751EC3E0EE0082F4EF /* Build configuration list for PBXNativeTarget "ZeroKata" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				841F57C21ED99C1600E16B10 /* Debug */,
-				841F57C31ED99C1600E16B10 /* Release */,
+				A28FF7761EC3E0EE0082F4EF /* Debug */,
+				A28FF7771EC3E0EE0082F4EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		841F57B61ED99C1600E16B10 /* ZeroKata.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				841F57B71ED99C1600E16B10 /* ZeroKata.xcdatamodel */,
-			);
-			currentVersion = 841F57B71ED99C1600E16B10 /* ZeroKata.xcdatamodel */;
-			path = ZeroKata.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 841F57A41ED99C1600E16B10 /* Project object */;
+	rootObject = A28FF75B1EC3E0EE0082F4EF /* Project object */;
 }
