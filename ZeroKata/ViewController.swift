@@ -19,87 +19,122 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // player list
     enum Player: Int {
         case cross = 1
         case nought = 2
     }
     
-    var player = Player.cross;
-    var cellState = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
+    var player = Player.cross                       // current player
+    var cellState = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]   // state of game cells
+    var gameOver = false                            // game over flag
+    
+    // winning combinations
     let winningCombination = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8],
         [0, 3, 6], [1, 4, 7], [2, 5, 8],
-        [0, 4, 8], [2, 4, 6]];
-    var gameOver = false;
+        [0, 4, 8], [2, 4, 6]]
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label: UILabel!              // winning player label
+    @IBOutlet weak var playAgainButton: UIButton!   // play again button
     
+    // game field tap action handler
     @IBAction func action(_ sender: AnyObject)
     {
-        if((cellState[(sender as! UIButton).tag] == 0) && (gameOver == false)) {
+        // check, whether the game is over
+        if gameOver == false {
+            return
+        }
+        
+        // check whether the cell is free at the moment
+        if cellState[(sender as! UIButton).tag - 1] == 0 {
             
-            cellState[(sender as! UIButton).tag] = player.rawValue
+            // if cell is free, mark it as occupied
+            cellState[(sender as! UIButton).tag - 1] = player.rawValue
             
+            // choose a picture to put on the game field and animate it
             if (player == .cross) {
-                
-                (sender as AnyObject).setImage(UIImage(named: "Cross.png"), for: UIControlState());
-                
-                player = .nought;
+                (sender as AnyObject).setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                player = .nought
             }
-                
+            
             else if (player == .nought) {
-                (sender as AnyObject).setImage(UIImage(named: "Nought.png"), for: UIControlState());
-                player = .cross;
+                (sender as AnyObject).setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                player = .cross
             }
             
             UIView.animate(
                 withDuration: 0.5, animations: {
                     (sender as! UIButton).transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-            },
+                },
                 completion: {
                     _ in UIView.animate(withDuration: 0.5) {
                         (sender as! UIButton).transform = CGAffineTransform.identity
                     }
-            }
+                }
             )
             
+            // check, whether there is a condition of game completion
             for c in winningCombination {
+                
+                // check for 3 same symbols in a row
                 if((cellState[c[0]] != 0) &&
                     (cellState[c[0]] == cellState[c[1]]) &&
                     (cellState[c[1]] == cellState[c[2]])) {
                     
+                    // output a winning message
                     if(cellState[c[0]] == Player.cross.rawValue) {
-                        label.text = "Cross has won!";
+                        label.text = "KATA HAS WON!"
                     }
                     else if(cellState[c[0]] == Player.nought.rawValue) {
-                        label.text = "Nought has won!";
+                        label.text = "ZERO HAS WON!"
                     }
                     
-                    gameOver = true;
+                    playAgainButton.isHidden = false
+                    label.isHidden = false
+                    
+                    gameOver = true
+                    return
                 }
             }
+            
+            // check for draw (all cells are occupied)
+            gameOver = true
+            for c in cellState {
+                if c == 0 {
+                    gameOver = false
+                    return
+                }
+            }
+            
+            label.text = "IT'S A DRAW!"
+            
+            playAgainButton.isHidden = false
+            label.isHidden = false
         }
     }
     
-    
-    @IBOutlet weak var playAgainButton: UIButton!
+    // play again tap action handler
     @IBAction func playAgain(_ sender: AnyObject)
     {
-//        stateOfGame = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-//        gameActiveState = true
-//        activePlayer = 1
-//        
-//        playAgainButton.isHidden = true
-//        label.isHidden = true
-//        
-//        for i in 1...9
-//        {
-//            let button = view.viewWithTag(i) as! UIButton
-//            button.setImage(nil, for: UIControlState())
-//        }
+        // reset game cells state
+        cellState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        
+        // allow access to the game field
+        gameOver = false
+        
+        // select default player
+        player = Player.cross
+        
+        // hide play again button and and winning player button
+        playAgainButton.isHidden = true
+        label.isHidden = true
+        
+        // reset button pictures
+        for i in 1...9 {
+            let button = view.viewWithTag(i) as! UIButton
+            button.setImage(nil, for: UIControlState())
+        }
     }
-    
-    
-    
 }
 
