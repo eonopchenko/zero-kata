@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Zero Kata
 //
-//  Created by Nishant, Alex, E on 18/05/2017.
+//  Created by Nishant, Alex, E on 01/06/2017.
 //
 
 import UIKit
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     @IBAction func action(_ sender: AnyObject)
     {
         // check, whether the game is over
-        if gameOver == false {
+        if gameOver == true {
             return
         }
         

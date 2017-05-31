@@ -1,9 +1,8 @@
 //
 //  AppDelegate.swift
-//  ZeroKata
+//  Zero Kata
 //
-//  Created by Sebastian Hette on 10.10.2016.
-//  Copyright © 2016 MAGNUMIUM. All rights reserved.
+//  Created by Nishant, Alex, E on 01/06/2017.
 //
 
 import UIKit
