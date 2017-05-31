@@ -21,11 +21,11 @@ class ViewController: UIViewController {
     
     // player list
     enum Player: Int {
-        case cross = 1
-        case nought = 2
+        case kata = 1
+        case zero = 2
     }
     
-    var player = Player.cross                       // current player
+    var player = Player.kata                       // current player
     var cellState = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]   // state of game cells
     var gameOver = false                            // game over flag
     
@@ -53,14 +53,14 @@ class ViewController: UIViewController {
             cellState[(sender as! UIButton).tag - 1] = player.rawValue
             
             // choose a picture to put on the game field and animate it
-            if (player == .cross) {
-                (sender as AnyObject).setImage(UIImage(named: "Cross.png"), for: UIControlState())
-                player = .nought
+            if (player == .kata) {
+                (sender as AnyObject).setImage(UIImage(named: "Kata.png"), for: UIControlState())
+                player = .zero
             }
             
-            else if (player == .nought) {
-                (sender as AnyObject).setImage(UIImage(named: "Nought.png"), for: UIControlState())
-                player = .cross
+            else if (player == .zero) {
+                (sender as AnyObject).setImage(UIImage(named: "Zero.png"), for: UIControlState())
+                player = .kata
             }
             
             UIView.animate(
@@ -83,10 +83,10 @@ class ViewController: UIViewController {
                     (cellState[c[1]] == cellState[c[2]])) {
                     
                     // output a winning message
-                    if(cellState[c[0]] == Player.cross.rawValue) {
+                    if(cellState[c[0]] == Player.kata.rawValue) {
                         label.text = "KATA HAS WON!"
                     }
-                    else if(cellState[c[0]] == Player.nought.rawValue) {
+                    else if(cellState[c[0]] == Player.zero.rawValue) {
                         label.text = "ZERO HAS WON!"
                     }
                     
@@ -124,7 +124,7 @@ class ViewController: UIViewController {
         gameOver = false
         
         // select default player
-        player = Player.cross
+        player = Player.kata
         
         // hide play again button and and winning player button
         playAgainButton.isHidden = true
