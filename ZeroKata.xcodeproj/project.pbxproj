@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84DF751B1EECE2CC00095671 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF751A1EECE2CC00095671 /* LaunchViewController.swift */; };
-		A28FF7671EC3E0EE0082F4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FF7661EC3E0EE0082F4EF /* AppDelegate.swift */; };
-		A28FF7691EC3E0EE0082F4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FF7681EC3E0EE0082F4EF /* ViewController.swift */; };
-		A28FF76C1EC3E0EE0082F4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28FF76A1EC3E0EE0082F4EF /* Main.storyboard */; };
-		A28FF76E1EC3E0EE0082F4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28FF76D1EC3E0EE0082F4EF /* Assets.xcassets */; };
-		A28FF7711EC3E0EE0082F4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28FF76F1EC3E0EE0082F4EF /* LaunchScreen.storyboard */; };
+		84DF75291EED260500095671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF75281EED260500095671 /* AppDelegate.swift */; };
+		84DF752B1EED260500095671 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF752A1EED260500095671 /* ViewController.swift */; };
+		84DF752E1EED260500095671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF752C1EED260500095671 /* Main.storyboard */; };
+		84DF75301EED260500095671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DF752F1EED260500095671 /* Assets.xcassets */; };
+		84DF75331EED260500095671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF75311EED260500095671 /* LaunchScreen.storyboard */; };
+		84DF753B1EED288C00095671 /* ViewControllerGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF753A1EED288B00095671 /* ViewControllerGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84DF751A1EECE2CC00095671 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
-		A28FF7631EC3E0EE0082F4EF /* ZeroKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A28FF7661EC3E0EE0082F4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A28FF7681EC3E0EE0082F4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A28FF76B1EC3E0EE0082F4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A28FF76D1EC3E0EE0082F4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A28FF7701EC3E0EE0082F4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A28FF7721EC3E0EE0082F4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DF75251EED260500095671 /* ZeroKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DF75281EED260500095671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84DF752A1EED260500095671 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84DF752D1EED260500095671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84DF752F1EED260500095671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84DF75321EED260500095671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84DF75341EED260500095671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DF753A1EED288B00095671 /* ViewControllerGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A28FF7601EC3E0EE0082F4EF /* Frameworks */ = {
+		84DF75221EED260500095671 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A28FF75A1EC3E0EE0082F4EF = {
+		84DF751C1EED260500095671 = {
 			isa = PBXGroup;
 			children = (
-				A28FF7651EC3E0EE0082F4EF /* ZeroKata */,
-				A28FF7641EC3E0EE0082F4EF /* Products */,
+				84DF75271EED260500095671 /* ZeroKata */,
+				84DF75261EED260500095671 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A28FF7641EC3E0EE0082F4EF /* Products */ = {
+		84DF75261EED260500095671 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A28FF7631EC3E0EE0082F4EF /* ZeroKata.app */,
+				84DF75251EED260500095671 /* ZeroKata.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A28FF7651EC3E0EE0082F4EF /* ZeroKata */ = {
+		84DF75271EED260500095671 /* ZeroKata */ = {
 			isa = PBXGroup;
 			children = (
-				A28FF7661EC3E0EE0082F4EF /* AppDelegate.swift */,
-				A28FF7681EC3E0EE0082F4EF /* ViewController.swift */,
-				A28FF76A1EC3E0EE0082F4EF /* Main.storyboard */,
-				84DF751A1EECE2CC00095671 /* LaunchViewController.swift */,
-				A28FF76D1EC3E0EE0082F4EF /* Assets.xcassets */,
-				A28FF76F1EC3E0EE0082F4EF /* LaunchScreen.storyboard */,
-				A28FF7721EC3E0EE0082F4EF /* Info.plist */,
+				84DF75281EED260500095671 /* AppDelegate.swift */,
+				84DF752A1EED260500095671 /* ViewController.swift */,
+				84DF752C1EED260500095671 /* Main.storyboard */,
+				84DF753A1EED288B00095671 /* ViewControllerGame.swift */,
+				84DF752F1EED260500095671 /* Assets.xcassets */,
+				84DF75311EED260500095671 /* LaunchScreen.storyboard */,
+				84DF75341EED260500095671 /* Info.plist */,
 			);
 			path = ZeroKata;
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A28FF7621EC3E0EE0082F4EF /* ZeroKata */ = {
+		84DF75241EED260500095671 /* ZeroKata */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A28FF7751EC3E0EE0082F4EF /* Build configuration list for PBXNativeTarget "ZeroKata" */;
+			buildConfigurationList = 84DF75371EED260500095671 /* Build configuration list for PBXNativeTarget "ZeroKata" */;
 			buildPhases = (
-				A28FF75F1EC3E0EE0082F4EF /* Sources */,
-				A28FF7601EC3E0EE0082F4EF /* Frameworks */,
-				A28FF7611EC3E0EE0082F4EF /* Resources */,
+				84DF75211EED260500095671 /* Sources */,
+				84DF75221EED260500095671 /* Frameworks */,
+				84DF75231EED260500095671 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,26 +84,26 @@
 			);
 			name = ZeroKata;
 			productName = ZeroKata;
-			productReference = A28FF7631EC3E0EE0082F4EF /* ZeroKata.app */;
+			productReference = 84DF75251EED260500095671 /* ZeroKata.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A28FF75B1EC3E0EE0082F4EF /* Project object */ = {
+		84DF751D1EED260500095671 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Alexandr Li";
+				ORGANIZATIONNAME = "Evgenii Onopchenko";
 				TargetAttributes = {
-					A28FF7621EC3E0EE0082F4EF = {
+					84DF75241EED260500095671 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = A28FF75E1EC3E0EE0082F4EF /* Build configuration list for PBXProject "ZeroKata" */;
+			buildConfigurationList = 84DF75201EED260500095671 /* Build configuration list for PBXProject "ZeroKata" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,55 +111,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A28FF75A1EC3E0EE0082F4EF;
-			productRefGroup = A28FF7641EC3E0EE0082F4EF /* Products */;
+			mainGroup = 84DF751C1EED260500095671;
+			productRefGroup = 84DF75261EED260500095671 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A28FF7621EC3E0EE0082F4EF /* ZeroKata */,
+				84DF75241EED260500095671 /* ZeroKata */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A28FF7611EC3E0EE0082F4EF /* Resources */ = {
+		84DF75231EED260500095671 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28FF7711EC3E0EE0082F4EF /* LaunchScreen.storyboard in Resources */,
-				A28FF76E1EC3E0EE0082F4EF /* Assets.xcassets in Resources */,
-				A28FF76C1EC3E0EE0082F4EF /* Main.storyboard in Resources */,
+				84DF75331EED260500095671 /* LaunchScreen.storyboard in Resources */,
+				84DF75301EED260500095671 /* Assets.xcassets in Resources */,
+				84DF752E1EED260500095671 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A28FF75F1EC3E0EE0082F4EF /* Sources */ = {
+		84DF75211EED260500095671 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28FF7691EC3E0EE0082F4EF /* ViewController.swift in Sources */,
-				84DF751B1EECE2CC00095671 /* LaunchViewController.swift in Sources */,
-				A28FF7671EC3E0EE0082F4EF /* AppDelegate.swift in Sources */,
+				84DF752B1EED260500095671 /* ViewController.swift in Sources */,
+				84DF75291EED260500095671 /* AppDelegate.swift in Sources */,
+				84DF753B1EED288C00095671 /* ViewControllerGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A28FF76A1EC3E0EE0082F4EF /* Main.storyboard */ = {
+		84DF752C1EED260500095671 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A28FF76B1EC3E0EE0082F4EF /* Base */,
+				84DF752D1EED260500095671 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A28FF76F1EC3E0EE0082F4EF /* LaunchScreen.storyboard */ = {
+		84DF75311EED260500095671 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A28FF7701EC3E0EE0082F4EF /* Base */,
+				84DF75321EED260500095671 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A28FF7731EC3E0EE0082F4EF /* Debug */ = {
+		84DF75351EED260500095671 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -218,7 +218,7 @@
 			};
 			name = Debug;
 		};
-		A28FF7741EC3E0EE0082F4EF /* Release */ = {
+		84DF75361EED260500095671 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,25 +262,25 @@
 			};
 			name = Release;
 		};
-		A28FF7761EC3E0EE0082F4EF /* Debug */ = {
+		84DF75381EED260500095671 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZeroKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Unitec.Zero-Kata";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unitec.ZeroKata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		A28FF7771EC3E0EE0082F4EF /* Release */ = {
+		84DF75391EED260500095671 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZeroKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Unitec.Zero-Kata";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unitec.ZeroKata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -289,25 +289,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A28FF75E1EC3E0EE0082F4EF /* Build configuration list for PBXProject "ZeroKata" */ = {
+		84DF75201EED260500095671 /* Build configuration list for PBXProject "ZeroKata" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A28FF7731EC3E0EE0082F4EF /* Debug */,
-				A28FF7741EC3E0EE0082F4EF /* Release */,
+				84DF75351EED260500095671 /* Debug */,
+				84DF75361EED260500095671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A28FF7751EC3E0EE0082F4EF /* Build configuration list for PBXNativeTarget "ZeroKata" */ = {
+		84DF75371EED260500095671 /* Build configuration list for PBXNativeTarget "ZeroKata" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A28FF7761EC3E0EE0082F4EF /* Debug */,
-				A28FF7771EC3E0EE0082F4EF /* Release */,
+				84DF75381EED260500095671 /* Debug */,
+				84DF75391EED260500095671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A28FF75B1EC3E0EE0082F4EF /* Project object */;
+	rootObject = 84DF751D1EED260500095671 /* Project object */;
 }

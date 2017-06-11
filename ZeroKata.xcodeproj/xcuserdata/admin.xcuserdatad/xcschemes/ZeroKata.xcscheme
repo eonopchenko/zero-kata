@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A28FF7621EC3E0EE0082F4EF"
+               BlueprintIdentifier = "84DF75241EED260500095671"
                BuildableName = "ZeroKata.app"
                BlueprintName = "ZeroKata"
                ReferencedContainer = "container:ZeroKata.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A28FF7621EC3E0EE0082F4EF"
+            BlueprintIdentifier = "84DF75241EED260500095671"
             BuildableName = "ZeroKata.app"
             BlueprintName = "ZeroKata"
             ReferencedContainer = "container:ZeroKata.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A28FF7621EC3E0EE0082F4EF"
+            BlueprintIdentifier = "84DF75241EED260500095671"
             BuildableName = "ZeroKata.app"
             BlueprintName = "ZeroKata"
             ReferencedContainer = "container:ZeroKata.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A28FF7621EC3E0EE0082F4EF"
+            BlueprintIdentifier = "84DF75241EED260500095671"
             BuildableName = "ZeroKata.app"
             BlueprintName = "ZeroKata"
             ReferencedContainer = "container:ZeroKata.xcodeproj">
