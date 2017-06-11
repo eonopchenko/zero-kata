@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84DF751B1EECE2CC00095671 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF751A1EECE2CC00095671 /* LaunchViewController.swift */; };
 		A28FF7671EC3E0EE0082F4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FF7661EC3E0EE0082F4EF /* AppDelegate.swift */; };
 		A28FF7691EC3E0EE0082F4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FF7681EC3E0EE0082F4EF /* ViewController.swift */; };
 		A28FF76C1EC3E0EE0082F4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28FF76A1EC3E0EE0082F4EF /* Main.storyboard */; };
@@ -15,7 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A28FF7631EC3E0EE0082F4EF /* ZeroKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZeroKata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DF751A1EECE2CC00095671 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		A28FF7631EC3E0EE0082F4EF /* ZeroKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28FF7661EC3E0EE0082F4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A28FF7681EC3E0EE0082F4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A28FF76B1EC3E0EE0082F4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,11 +59,12 @@
 				A28FF7661EC3E0EE0082F4EF /* AppDelegate.swift */,
 				A28FF7681EC3E0EE0082F4EF /* ViewController.swift */,
 				A28FF76A1EC3E0EE0082F4EF /* Main.storyboard */,
+				84DF751A1EECE2CC00095671 /* LaunchViewController.swift */,
 				A28FF76D1EC3E0EE0082F4EF /* Assets.xcassets */,
 				A28FF76F1EC3E0EE0082F4EF /* LaunchScreen.storyboard */,
 				A28FF7721EC3E0EE0082F4EF /* Info.plist */,
 			);
-			path = "ZeroKata";
+			path = ZeroKata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,8 +82,8 @@
 			);
 			dependencies = (
 			);
-			name = "ZeroKata";
-			productName = "ZeroKata";
+			name = ZeroKata;
+			productName = ZeroKata;
 			productReference = A28FF7631EC3E0EE0082F4EF /* ZeroKata.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A28FF7691EC3E0EE0082F4EF /* ViewController.swift in Sources */,
+				84DF751B1EECE2CC00095671 /* LaunchViewController.swift in Sources */,
 				A28FF7671EC3E0EE0082F4EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "ZeroKata/Info.plist";
+				INFOPLIST_FILE = ZeroKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Unitec.Zero-Kata";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "ZeroKata/Info.plist";
+				INFOPLIST_FILE = ZeroKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Unitec.Zero-Kata";
 				PRODUCT_NAME = "$(TARGET_NAME)";
