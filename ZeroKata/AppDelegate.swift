@@ -3,7 +3,7 @@
 //  ZeroKata
 //
 //  Created by Admin on 11.06.17.
-//  Copyright © 2017 Evgenii Onopchenko. All rights reserved.
+//  Copyright © 2017 Evgenii Onopchenko, Alexandr Li, Nishant. All rights reserved.
 //
 
 import UIKit

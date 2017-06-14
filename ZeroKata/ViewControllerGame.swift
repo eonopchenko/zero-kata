@@ -3,17 +3,21 @@
 //  ZeroKata
 //
 //  Created by Admin on 11.06.17.
-//  Copyright © 2017 Evgenii Onopchenko. All rights reserved.
+//  Copyright © 2017 Evgenii Onopchenko, Alexandr Li, Nishant. All rights reserved.
 //
 
 import UIKit
+import Social
+import MessageUI
 
-class ViewControllerGame: UIViewController {
+class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet weak var labelPlayer1: UILabel!
     @IBOutlet weak var labelPlayer2: UILabel!
     @IBOutlet weak var labelResult: UILabel!
     @IBOutlet weak var buttonReplay: UIButton!
+    @IBOutlet weak var buttonShareTwitter: UIButton!
+    @IBOutlet weak var buttonShareSMS: UIButton!
     @IBOutlet weak var imageResult: UIImageView!
     @IBOutlet weak var labelPlayer1Score: UILabel!
     @IBOutlet weak var labelPlayer2Score: UILabel!
@@ -29,6 +33,7 @@ class ViewControllerGame: UIViewController {
     var gameOver = false                            // game over flag
     var kataScore = 0                               // 
     var zeroScore = 0                               //
+    let highScoreDefault = Foundation.UserDefaults.standard
     
     // winning combinations
     let winningCombination = [
@@ -83,14 +88,28 @@ class ViewControllerGame: UIViewController {
                         imageResult.image = UIImage(named: "button-kata.png")
                         kataScore += 1
                         labelPlayer1Score.text = String(kataScore)
+                        if (kataScore > highScore) {
+                            highScore = kataScore
+                            highScoreDefault.set(highScore, forKey: "highScore")
+                            highScoreDefault.set(player1Name, forKey: "bestPlayer")
+                            highScoreDefault.synchronize()
+                        }
                     }
                     else if(cellState[c[0]] == Player.zero.rawValue) {
                         imageResult.image = UIImage(named: "button-zero.png")
                         zeroScore += 1
                         labelPlayer2Score.text = String(zeroScore)
+                        if (zeroScore > highScore) {
+                            highScore = zeroScore
+                            highScoreDefault.set(highScore, forKey: "highScore")
+                            highScoreDefault.set(player2Name, forKey: "bestPlayer")
+                            highScoreDefault.synchronize()
+                        }
                     }
                     
                     buttonReplay.isHidden = false
+                    buttonShareTwitter.isHidden = false
+                    buttonShareSMS.isHidden = false
                     
                     gameOver = true
                     
@@ -108,6 +127,8 @@ class ViewControllerGame: UIViewController {
             }
             
             buttonReplay.isHidden = false
+            buttonShareTwitter.isHidden = false
+            buttonShareSMS.isHidden = false
             labelResult.isHidden = false
         }
     }
@@ -124,6 +145,8 @@ class ViewControllerGame: UIViewController {
         
         // hide play again button and and winning player button
         buttonReplay.isHidden = true
+        buttonShareTwitter.isHidden = true
+        buttonShareSMS.isHidden = true
         labelResult.isHidden = true
         imageResult.image = UIImage(named: "")
         
@@ -132,6 +155,50 @@ class ViewControllerGame: UIViewController {
             let button = view.viewWithTag(i) as! UIButton
             button.setImage(nil, for: UIControlState())
         }
+    }
+    
+    @IBAction func ShareTwitter(_ sender: Any) {
+        
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter){
+            
+            let twitter:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            twitter.setInitialText("Hey! We've just played ZeroKata. It was awesome!👍👍👍 \(player1Name) scored \(kataScore) and \(player2Name) scored \(zeroScore).")
+            self.present(twitter, animated: true, completion: nil)
+        }
+        else{
+            
+            let alert = UIAlertController(title: "Accounts", message: "Please log into your twitter account within the settings", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func shareSMS(_ sender: Any) {
+        
+        if MFMessageComposeViewController.canSendText(){
+            
+            let message:MFMessageComposeViewController = MFMessageComposeViewController()
+            
+            message.messageComposeDelegate = self
+            
+            message.recipients = nil
+            message.body = "Hey! We've just played ZeroKata. It was awesome!👍👍👍 \(player1Name) scored \(kataScore) and \(player2Name) scored \(zeroScore)."
+            
+            self.present(message, animated: true, completion: nil)
+        }
+        else{
+            
+            let alert = UIAlertController(title: "Warning", message: "This device can not send SMS messages", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
