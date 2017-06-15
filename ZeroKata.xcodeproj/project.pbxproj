@@ -11,8 +11,8 @@
 		845EEF661EF1E1C800FD5E72 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEF651EF1E1C800FD5E72 /* ToDoTableViewController.swift */; };
 		845EEF6A1EF1E3DA00FD5E72 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845EEF691EF1E3DA00FD5E72 /* WebKit.framework */; };
 		845EEF6C1EF1E40400FD5E72 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845EEF6B1EF1E40400FD5E72 /* SafariServices.framework */; };
-		845EEF6F1EF1EC2100FD5E72 /* QSTodoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845EEF6D1EF1EC2100FD5E72 /* QSTodoDataModel.xcdatamodeld */; };
 		846A6FFF1EF1F9D80064EAA3 /* ToDoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A6FFE1EF1F9D80064EAA3 /* ToDoItemViewController.swift */; };
+		84DF57601EF23B8400B138C6 /* QSTodoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84DF575E1EF23B8400B138C6 /* QSTodoDataModel.xcdatamodeld */; };
 		84DF75291EED260500095671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF75281EED260500095671 /* AppDelegate.swift */; };
 		84DF752B1EED260500095671 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF752A1EED260500095671 /* ViewController.swift */; };
 		84DF752E1EED260500095671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF752C1EED260500095671 /* Main.storyboard */; };
@@ -29,8 +29,8 @@
 		845EEF651EF1E1C800FD5E72 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		845EEF691EF1E3DA00FD5E72 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		845EEF6B1EF1E40400FD5E72 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		845EEF6E1EF1EC2100FD5E72 /* QSTodoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QSTodoDataModel.xcdatamodel; sourceTree = "<group>"; };
 		846A6FFE1EF1F9D80064EAA3 /* ToDoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemViewController.swift; sourceTree = "<group>"; };
+		84DF575F1EF23B8400B138C6 /* QSTodoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QSTodoDataModel.xcdatamodel; sourceTree = "<group>"; };
 		84DF75251EED260500095671 /* ZeroKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DF75281EED260500095671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DF752A1EED260500095671 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		84DF75271EED260500095671 /* ZeroKata */ = {
 			isa = PBXGroup;
 			children = (
+				84DF575E1EF23B8400B138C6 /* QSTodoDataModel.xcdatamodeld */,
 				845EEF621EF1D71100FD5E72 /* frameworks */,
-				845EEF6D1EF1EC2100FD5E72 /* QSTodoDataModel.xcdatamodeld */,
 				84DF75281EED260500095671 /* AppDelegate.swift */,
 				84DF752C1EED260500095671 /* Main.storyboard */,
 				84DF752F1EED260500095671 /* Assets.xcassets */,
@@ -197,7 +197,7 @@
 				84DF752B1EED260500095671 /* ViewController.swift in Sources */,
 				846A6FFF1EF1F9D80064EAA3 /* ToDoItemViewController.swift in Sources */,
 				845EEF661EF1E1C800FD5E72 /* ToDoTableViewController.swift in Sources */,
-				845EEF6F1EF1EC2100FD5E72 /* QSTodoDataModel.xcdatamodeld in Sources */,
+				84DF57601EF23B8400B138C6 /* QSTodoDataModel.xcdatamodeld in Sources */,
 				84DF75291EED260500095671 /* AppDelegate.swift in Sources */,
 				84DF753B1EED288C00095671 /* ViewControllerGame.swift in Sources */,
 			);
@@ -380,15 +380,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		845EEF6D1EF1EC2100FD5E72 /* QSTodoDataModel.xcdatamodeld */ = {
+		84DF575E1EF23B8400B138C6 /* QSTodoDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				845EEF6E1EF1EC2100FD5E72 /* QSTodoDataModel.xcdatamodel */,
+				84DF575F1EF23B8400B138C6 /* QSTodoDataModel.xcdatamodel */,
 			);
-			currentVersion = 845EEF6E1EF1EC2100FD5E72 /* QSTodoDataModel.xcdatamodel */;
-			name = QSTodoDataModel.xcdatamodeld;
-			path = "/Volumes/VMware Shared Folders/Shared Folder/AZURE/zerokata1/zerokata1/QSTodoDataModel.xcdatamodeld";
-			sourceTree = "<absolute>";
+			currentVersion = 84DF575F1EF23B8400B138C6 /* QSTodoDataModel.xcdatamodel */;
+			path = QSTodoDataModel.xcdatamodeld;
+			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
