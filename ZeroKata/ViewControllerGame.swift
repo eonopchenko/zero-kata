@@ -10,6 +10,10 @@ import UIKit
 import Social
 import MessageUI
 
+var winner = 0
+var player1Score = 0
+var player2Score = 0
+
 class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet weak var labelPlayer1: UILabel!
@@ -31,8 +35,6 @@ class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelega
     var player = Player.kata                        // current player
     var cellState = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]   // state of game cells
     var gameOver = false                            // game over flag
-    var kataScore = 0                               // 
-    var zeroScore = 0                               //
     let highScoreDefault = Foundation.UserDefaults.standard
     
     // winning combinations
@@ -86,10 +88,11 @@ class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelega
                     // output a winning message
                     if(cellState[c[0]] == Player.kata.rawValue) {
                         imageResult.image = UIImage(named: "button-kata.png")
-                        kataScore += 1
-                        labelPlayer1Score.text = String(kataScore)
-                        if (kataScore > highScore) {
-                            highScore = kataScore
+                        player1Score += 1
+                        winner = 1
+                        labelPlayer1Score.text = String(player1Score)
+                        if (player1Score > highScore) {
+                            highScore = player1Score
                             highScoreDefault.set(highScore, forKey: "highScore")
                             highScoreDefault.set(player1Name, forKey: "bestPlayer")
                             highScoreDefault.synchronize()
@@ -97,10 +100,11 @@ class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelega
                     }
                     else if(cellState[c[0]] == Player.zero.rawValue) {
                         imageResult.image = UIImage(named: "button-zero.png")
-                        zeroScore += 1
-                        labelPlayer2Score.text = String(zeroScore)
-                        if (zeroScore > highScore) {
-                            highScore = zeroScore
+                        player2Score += 1
+                        winner = 2
+                        labelPlayer2Score.text = String(player2Score)
+                        if (player2Score > highScore) {
+                            highScore = player2Score
                             highScoreDefault.set(highScore, forKey: "highScore")
                             highScoreDefault.set(player2Name, forKey: "bestPlayer")
                             highScoreDefault.synchronize()
@@ -112,6 +116,8 @@ class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelega
                     buttonShareSMS.isHidden = false
                     
                     gameOver = true
+                    
+                    performSegue(withIdentifier: "segueScoretable", sender: self)
                     
                     return
                 }
@@ -126,10 +132,14 @@ class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelega
                 }
             }
             
+            winner = 0
+            
             buttonReplay.isHidden = false
             buttonShareTwitter.isHidden = false
             buttonShareSMS.isHidden = false
             labelResult.isHidden = false
+            
+            performSegue(withIdentifier: "segueScoretable", sender: self)
         }
     }
     
@@ -162,7 +172,7 @@ class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelega
         if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter){
             
             let twitter:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            twitter.setInitialText("Hey! We've just played ZeroKata. It was awesome!👍👍👍 \(player1Name) scored \(kataScore) and \(player2Name) scored \(zeroScore).")
+            twitter.setInitialText("Hey! We've just played ZeroKata. It was awesome!👍👍👍 \(player1Name) scored \(player1Score) and \(player2Name) scored \(player2Score).")
             self.present(twitter, animated: true, completion: nil)
         }
         else{
@@ -184,7 +194,7 @@ class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelega
             message.messageComposeDelegate = self
             
             message.recipients = nil
-            message.body = "Hey! We've just played ZeroKata. It was awesome!👍👍👍 \(player1Name) scored \(kataScore) and \(player2Name) scored \(zeroScore)."
+            message.body = "Hey! We've just played ZeroKata. It was awesome!👍👍👍 \(player1Name) scored \(player1Score) and \(player2Name) scored \(player2Score)."
             
             self.present(message, animated: true, completion: nil)
         }
