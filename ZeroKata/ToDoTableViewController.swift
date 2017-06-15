@@ -103,19 +103,19 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
                 // server conflicts, etc via the MSSyncContextDelegate
                 print("Error: \((error! as NSError).description)")
                 
-                // We will just discard our changes and keep the servers copy for simplicity                
-                if let opErrors = (error! as NSError).userInfo[MSErrorPushResultKey] as? Array<MSTableOperationError> {
-                    for opError in opErrors {
-                        print("Attempted operation to item \(opError.itemId)")
-                        if (opError.operation == MSTableOperationTypes() || opError.operation == .delete) {
-                            print("Insert/Delete, failed discarding changes")
-                            opError.cancelOperationAndDiscardItem(completion: nil)
-                        } else {
-                            print("Update failed, reverting to server's copy")
-                            opError.cancelOperationAndUpdateItem(opError.serverItem!, completion: nil)
-                        }
-                    }
-                }
+//                // We will just discard our changes and keep the servers copy for simplicity                
+//                if let opErrors = (error! as NSError).userInfo[MSErrorPushResultKey] as? Array<MSTableOperationError> {
+//                    for opError in opErrors {
+//                        print("Attempted operation to item \(opError.itemId)")
+//                        if (opError.operation == MSTableOperationTypes() || opError.operation == .delete) {
+//                            print("Insert/Delete, failed discarding changes")
+//                            opError.cancelOperationAndDiscardItem(completion: nil)
+//                        } else {
+//                            print("Update failed, reverting to server's copy")
+//                            opError.cancelOperationAndUpdateItem(opError.serverItem!, completion: nil)
+//                        }
+//                    }
+//                }
             }
             
             self.refreshControl?.endRefreshing()

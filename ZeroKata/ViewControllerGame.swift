@@ -111,35 +111,32 @@ class ViewControllerGame: UIViewController, MFMessageComposeViewControllerDelega
                         }
                     }
                     
-                    buttonReplay.isHidden = false
-                    buttonShareTwitter.isHidden = false
-                    buttonShareSMS.isHidden = false
-                    
                     gameOver = true
                     
-                    performSegue(withIdentifier: "segueScoretable", sender: self)
-                    
-                    return
+                    break
                 }
             }
             
-            // check for draw (all cells are occupied)
-            gameOver = true
-            for c in cellState {
-                if c == 0 {
-                    gameOver = false
-                    return
+            if gameOver == false {
+                // check for draw (all cells are occupied)
+                gameOver = true
+                for c in cellState {
+                    if c == 0 {
+                        gameOver = false
+                        return
+                    }
                 }
+                labelResult.isHidden = false
+                winner = 0
             }
             
-            winner = 0
+            if gameOver == true {
+                buttonReplay.isHidden = false
+                buttonShareTwitter.isHidden = false
+                buttonShareSMS.isHidden = false
             
-            buttonReplay.isHidden = false
-            buttonShareTwitter.isHidden = false
-            buttonShareSMS.isHidden = false
-            labelResult.isHidden = false
-            
-            performSegue(withIdentifier: "segueScoretable", sender: self)
+                performSegue(withIdentifier: "segueScoretable", sender: self)
+            }
         }
     }
     

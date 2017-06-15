@@ -87,17 +87,17 @@
                         <outlet property="highScorelbl" destination="JDL-cv-v1U" id="R6c-T5-ewG"/>
                         <outlet property="textPlayer1" destination="7hq-nk-1wq" id="CaQ-LW-4jN"/>
                         <outlet property="textPlayer2" destination="RjT-30-0Ft" id="3j2-wb-KMh"/>
-                        <segue destination="EWa-bQ-dcj" kind="show" identifier="segueStart" id="BDK-4C-ujK"/>
+                        <segue destination="iPg-KS-Cx8" kind="show" identifier="segueStart" id="BDK-4C-ujK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
         </scene>
-        <!--View Controller Game-->
+        <!--Game-->
         <scene sceneID="EyC-0U-g3c">
             <objects>
-                <viewController id="EWa-bQ-dcj" customClass="ViewControllerGame" customModule="ZeroKata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Game" id="EWa-bQ-dcj" customClass="ViewControllerGame" customModule="ZeroKata" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dXd-zq-rWb"/>
                         <viewControllerLayoutGuide type="bottom" id="vSN-D0-lvj"/>
@@ -277,6 +277,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aVh-Hs-Ffa"/>
                     <connections>
                         <outlet property="buttonReplay" destination="GwI-UB-ddj" id="tfe-fO-rlo"/>
                         <outlet property="buttonShareSMS" destination="4lM-aP-XUo" id="xU1-bD-BPB"/>
@@ -287,17 +288,17 @@
                         <outlet property="labelPlayer2" destination="qeA-f2-SL2" id="37P-3p-tW5"/>
                         <outlet property="labelPlayer2Score" destination="uSO-8G-8oc" id="inK-dF-tSO"/>
                         <outlet property="labelResult" destination="pOf-yT-AZe" id="xYY-12-L95"/>
-                        <segue destination="k9T-RX-G8F" kind="showDetail" identifier="segueScoretable" id="PbW-sG-Ugm"/>
+                        <segue destination="juK-iJ-Rhp" kind="show" identifier="segueScoretable" id="1a4-96-C4b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8M2-qv-nya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834.375" y="120"/>
+            <point key="canvasLocation" x="1740.5797101449277" y="119.83695652173914"/>
         </scene>
         <!--Score Table-->
         <scene sceneID="cH0-Pt-5f8">
             <objects>
-                <tableViewController id="juK-iJ-Rhp" customClass="ToDoTableViewController" customModule="ZeroKata" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Score Table" id="juK-iJ-Rhp" customClass="ToDoTableViewController" customModule="ZeroKata" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ahq-Ww-jKG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,11 +308,11 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCl-cJ-7lz" id="iIm-8n-Qgf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4fK-Re-O5u">
-                                            <rect key="frame" x="20" y="0.0" width="379" height="43"/>
+                                            <rect key="frame" x="20" y="0.0" width="379" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -326,27 +327,31 @@
                             <outlet property="delegate" destination="juK-iJ-Rhp" id="k6q-c7-k7W"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Score Table" id="fu4-EJ-snV"/>
+                    <navigationItem key="navigationItem" id="fu4-EJ-snV">
+                        <nil key="title"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOw-dk-9gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2371" y="120"/>
+            <point key="canvasLocation" x="2497" y="123"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="UhC-S6-cTJ">
+        <scene sceneID="HyA-pW-Jn6">
             <objects>
-                <navigationController id="k9T-RX-G8F" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gaF-Yw-J50">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iPg-KS-Cx8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cqH-8U-TZ1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="juK-iJ-Rhp" kind="relationship" relationship="rootViewController" id="bgh-CR-1Iw"/>
+                        <segue destination="EWa-bQ-dcj" kind="relationship" relationship="rootViewController" id="J7K-DD-5ii"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fnI-nE-cjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fr2-WH-jF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1620" y="120"/>
+            <point key="canvasLocation" x="967" y="120"/>
         </scene>
     </scenes>
     <resources>
